@@ -17,6 +17,14 @@ import Unocss from 'unocss/vite'
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
 export default defineConfig({
+  build: {
+    emptyOutDir: true,
+  },
+
+  server: {
+    host: 'localhost',
+  },
+
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
@@ -87,8 +95,9 @@ export default defineConfig({
       includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
       manifest: {
         name: 'Vitesse',
-        short_name: 'Vitesse',
+        short_name: 'App',
         theme_color: '#ffffff',
+        background_color: '#ffffff',
         icons: [
           {
             src: '/pwa-192x192.png',

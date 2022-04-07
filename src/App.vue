@@ -5,7 +5,7 @@
 useHead({
   title: 'Vitesse',
   meta: [
-    { name: 'description', content: 'Opinionated Vite Starter Template' },
+    { name: 'description', content: '_ powered by Vitesse!' },
   ],
 })
 </script>
