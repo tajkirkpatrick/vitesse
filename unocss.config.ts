@@ -28,7 +28,7 @@ export default defineConfig({
         carbon: () => import('@iconify-json/carbon/icons.json').then(i => i.default as any),
         mdi: () => import('@iconify-json/mdi/icons.json').then(i => i.default as any),
       },
-     }),
+    }),
     presetTypography(),
     presetWebFonts({
       fonts: {
